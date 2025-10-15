@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <div class=" ">
+        {% for i in product %}
+           <p> {{i.name}} | </p>
+           <p> {{i.price}} | </p>
+           <p>{{i.description}} | </p>
+            <p>{{i.type}}</p>
+           
+        
+        {% empty %}
+        <p> no products </p>
+        {% endfor %}
+
+
+       
+    </div>
+</body>
+</html>
